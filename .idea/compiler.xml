@@ -14,7 +14,6 @@
         <module name="swagger-order" />
         <module name="nacos-use-service-name" />
         <module name="gateway-swagger" />
-        <module name="swagger-starter" />
         <module name="gateway-demo" />
         <module name="nacos-consumer" />
       </profile>
