@@ -74,7 +74,7 @@
 - gateway-swagger : 10800
 
 
-![](./assets/qrcode.jpg)
+<img style="border:1px red solid; display:block; margin:0 auto;" src="./assets/qrcode.jpg" alt="微信公众号" />
 
 
     
