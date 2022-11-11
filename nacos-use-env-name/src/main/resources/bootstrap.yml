@@ -1,0 +1,26 @@
+server:
+  port: 10400
+
+spring:
+  application:
+    name: nacos-use-env-name
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.1.150:8848
+        # SIT 的命名空间， 后续只需要修改 namespace 即可
+        namespace: 233e611f-5f4a-4051-a9cc-8d4f2bb22a07
+        file-extension: yml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # yml文件中存在特殊字符，必须用单引号包含，否则启动报错
+        include: '*'
+
+# 设置org.springframework包的日志级别为debug
+logging:
+  level:
+    org:
+      springframework: info

@@ -1,0 +1,25 @@
+# 端口号
+server:
+  port: 10000
+
+spring:
+  application:
+    # 注册到nacos上的服务名称，也是服务发现的名称，必写
+    name: nacos-provider
+  cloud:
+    nacos:
+      discovery:
+        # nacos的注册地址
+        server-addr: 192.168.1.150:8848
+        # gateway
+        namespace: deeaeca6-bed9-4fb1-b5b7-9c79278561ca
+    sentinel:
+      transport:
+        dashboard: 192.168.1.150:8858
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # yml文件中存在特殊字符，必须用单引号包含，否则启动报错
+        include: '*'

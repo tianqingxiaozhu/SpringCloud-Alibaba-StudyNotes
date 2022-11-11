@@ -1,0 +1,28 @@
+server:
+  port: 10300
+
+spring:
+  application:
+    name: nacos-use-service-name
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.1.150:8848
+        namespace: 72682210-92fa-4df3-8bc8-7366db999354
+        file-extension: yml
+        # 后续只需要修改 group ，改成不同的环境名称即可实现隔离
+        group: DEV
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # yml文件中存在特殊字符，必须用单引号包含，否则启动报错
+        include: '*'
+
+# 设置org.springframework包的日志级别为debug
+logging:
+  level:
+    org:
+      springframework: info
