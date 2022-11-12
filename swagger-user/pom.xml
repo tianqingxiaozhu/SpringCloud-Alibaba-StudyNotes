@@ -7,6 +7,8 @@
         <groupId>com.tianqingxiaozhu</groupId>
         <artifactId>tianqingxiaozhu-starter</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath />
+<!--        <relativePath>../tianqingxiaozhu-starter/pom.xml</relativePath>-->
     </parent>
 
     <groupId>com.tianqingxiaozhu</groupId>

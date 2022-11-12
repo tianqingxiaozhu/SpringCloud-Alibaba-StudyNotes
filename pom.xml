@@ -17,7 +17,9 @@
         <module>nacos-use-env-name</module>
         <module>nacos-use-service-name</module>
         <module>gateway-demo</module>
-        <module>swagger-starter</module>
+        <module>swagger-user</module>
+        <module>swagger-order</module>
+        <module>gateway-swagger</module>
     </modules>
 
 
