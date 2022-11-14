@@ -20,6 +20,12 @@
         <module>swagger-user</module>
         <module>swagger-order</module>
         <module>gateway-swagger</module>
+
+        <module>tianqingxiaozhu-common</module>
+
+        <module>seata-storage</module>
+        <module>seata-order</module>
+        <module>seata-account</module>
     </modules>
 
 
