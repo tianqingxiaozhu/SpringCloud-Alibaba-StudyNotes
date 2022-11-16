@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-@ConfigurationProperties(prefix = "mybrother")
+@ConfigurationProperties(prefix = "mybrother")// prefix 的值就是控制台添加的配置文件的名称
 public class MyBrotherInfo {
     private String name;
     private String age;
