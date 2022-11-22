@@ -8,7 +8,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-@FeignClient(value = "nacos-provider"/*,configuration = FeignMultipartSupportConfig.class*/)
+@FeignClient(value = "nacos-provider")
 public interface ProviderService {
 
     @RequestMapping("/provider/hello")

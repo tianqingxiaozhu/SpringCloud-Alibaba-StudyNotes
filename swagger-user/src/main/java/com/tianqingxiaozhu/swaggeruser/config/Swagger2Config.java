@@ -30,9 +30,9 @@ public class Swagger2Config {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("micro-knife4j-user")
+                .title("swagger-user")
                 .description("用户服务API文档")
-                .contact("macro")
+                .contact("tianqingxiaozhu")
                 .version("1.0")
                 .build();
     }

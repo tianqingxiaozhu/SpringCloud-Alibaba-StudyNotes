@@ -4,8 +4,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @author shawnwang
+ */
 @RestController
-@RequestMapping("gateway")
+@RequestMapping("providerbygateway")
 public class GatewayController {
 
     @GetMapping("/hello")

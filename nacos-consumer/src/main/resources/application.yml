@@ -22,15 +22,15 @@ management:
         ## yml文件中存在特殊字符，必须用单引号包含，否则启动报错
         include: '*'
 
-# feign 客户端的连接超时时间
+# feign 配置
 feign:
   compression:
     request:
       enabled: true
-      mime-types: text/xml,application/xml,application/json
-      min-request-size: 1
+      mime-types: text/xml,application/xml,application/json # 压缩的请求类型
+      min-request-size: 2048 # 压缩数据的下限
     response:
-      enabled: true
+      enabled: true # 开启响应的zip压缩
 
   # 修改客户端的连接超时时间
   client:
@@ -39,7 +39,7 @@ feign:
         connectTimeout: 5000
         readTimeout: 5000
 
-  # 替换默认的URLConnection客户端，换成 httpclient，替换后上面配置的 连接超时时间就会失效
+# 替换默认的URLConnection客户端，换成 httpclient，替换后上面配置的 连接超时时间就会失效
 #  httpclient:
 #    enabled: true
   okhttp:
